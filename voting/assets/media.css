@@ -1,0 +1,291 @@
+@media screen and (max-width:992px) {
+    /* .links {
+        display: none;
+    } */
+
+    .hamburger {
+        display: block;
+        background: transparent;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        margin: 0rem 0 0 90%;
+        outline: none;
+        border: 0;
+        z-index: 9999;
+    }
+
+    header nav .logo {
+        width: 30%;
+        /* height: 100%; */
+        margin: 0 0 0 2rem;
+        /* border: 1px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding: 0 0 0 1.5rem;
+    }
+
+    header nav .logo img {
+        width: 100%;
+        height: 40%;
+        /* border: 1px solid green; */
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        z-index: 1;
+    }
+
+    header nav .tabs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* height: 100vh; */
+        background: transparent;
+        backdrop-filter: blur(1rem);
+        align-items: end;
+        margin: 0;
+        padding: 0;
+        /* z-index: 999999; */
+
+    }
+
+    /* .tabs {
+        width: 100%;
+
+    } */
+
+
+
+    ul li {
+        padding: 2.5rem 0 0 0;
+    }
+
+    /* light and dark toggle */
+    #theme {
+        margin-left: 0;
+        margin-left: 55%;
+        margin-top: 1.3rem;
+        font-size: 22px;
+    }
+
+    .hamburger-top,
+    .hamburger-middle,
+    .hamburger-bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 2px;
+        background: #000;
+        transform: rotate(0);
+        transition: all 0.2s;
+    }
+
+    .hamburger-middle {
+        transform: translateY(7px);
+    }
+
+
+    .hamburger-bottom {
+        transform: translateY(14px);
+    }
+
+    .show {
+        visibility: visible;
+    }
+
+    .hide {
+        visibility: hidden;
+    }
+
+    .open {
+        transform: rotate(90deg);
+        transform: translateY(0px);
+    }
+
+    .open .hamburger-top {
+        transform: rotate(45deg) translateY(6px) translate(6px);
+    }
+
+
+    .open .hamburger-middle {
+        display: none;
+    }
+
+    .open .hamburger-bottom {
+        transform: rotate(-45deg) translateY(6px) translate(-6px);
+    }
+
+    /* .links {
+        width: 200px;
+        position: absolute;
+        height: 100vh;
+        margin: 50% 0 0 15rem;
+    
+    }
+
+    .links ul {
+        width: 200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background: red;
+        
+    } */
+
+
+
+    ul li {
+        padding: 2.5rem 0 0 0;
+        /* backdrop-filter: blur(1rem); */
+
+    }
+
+
+
+}
+
+@media screen and (max-width:700px) {
+
+    /* for nav */
+    ul {
+        /* display: none; */
+        /* width: 200px; */
+        height: 100vh;
+        flex-direction: column;
+        z-index: 0;
+        /* justify-content: end; */
+
+        position: absolute;
+        padding: 3rem 0 0 2rem;
+        margin-top: 90vh;
+        /* margin: 0rem 0 0 30%; */
+        /* border: 1px solid red; */
+        /* justify-content: center; */
+        /* background-color: #fff; */
+        background: transparent;
+        backdrop-filter: blur(1rem);
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    /* for the main body */
+    section .container {
+        width: 100%;
+        margin: 3rem 0 0 0;
+        z-index: 0;
+    }
+
+    section .container .row {
+        display: block;
+        height: 950px;
+
+
+    }
+
+    section .container .row:nth-child(2) {
+        display: block;
+        margin-top: 5rem;
+        height: 950px;
+
+
+    }
+
+    /* section .container .row:nth-child(2) {
+        
+    } */
+    section .container .row .col {
+        width: 100%;
+
+        height: 350px;
+        /* border: 2px solid red; */
+    }
+
+
+    /* ending of navbar styling */
+}
+
+/* ipad mode */
+@media (min-width:700px) and (max-width:1100px) {
+
+    /* for nav */
+    header nav .tabs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* height: 100vh; */
+        background: transparent;
+        backdrop-filter: blur(1rem);
+        align-items: end;
+        margin: 0;
+        padding: 0;
+        /* z-index: 999999; */
+
+    }
+
+    ul {
+        /* display: none; */
+        /* width: 200px; */
+        height: 100vh;
+        flex-direction: column;
+        /* justify-content: end; */
+        position: absolute;
+        padding: 3rem 0 0 2rem;
+        /* margin: 0rem 0 0 55%; */
+        margin-top: 90vh;
+
+        /* border: 1px solid red; */
+        /* justify-content: center; */
+        /* background-color: #fff; */
+        background: transparent;
+        backdrop-filter: blur(1rem);
+        transition: all 0.3s ease-in-out;
+
+    }
+    
+    ul li {
+        padding: 2.5rem 0 0 0;
+        /* backdrop-filter: blur(1rem); */
+
+    }
+
+    /* for the main body */
+    section .container {
+        width: 100%;
+        margin: 3rem 0 0 0;
+    }
+
+    section .container .row {
+        display: flex;
+        flex-wrap: wrap;
+        height: 950px;
+
+
+    }
+
+    section .container .row:nth-child(2) {
+        display: flex;
+        margin-top: 5rem;
+        height: 950px;
+
+
+    }
+
+    /* section .container .row:nth-child(2) {
+    
+} */
+    section .container .row .col {
+        width: 50%;
+
+        height: 350px;
+        /* border: 2px solid red; */
+    }
+
+
+    /* ending of navbar styling */
+}
