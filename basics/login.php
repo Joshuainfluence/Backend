@@ -13,6 +13,7 @@ if ($username !== $user[0]) {
 $password = readline("Enter password: ");
 if ($password !== $user[1]){
     echo "Error-> Incorrect password!";
+    die();
 }
 
 
