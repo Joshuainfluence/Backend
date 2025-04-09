@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,3 +32,4 @@
 </body>
 
 </html>
+<?php unset($_SESSION['error'], $_SESSION['success'])?>
