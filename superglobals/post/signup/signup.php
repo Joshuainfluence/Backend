@@ -30,8 +30,12 @@ function signup($username, $email, $password){
     array_push($users, $username, $email, $password);
 
     $_SESSION['success'] = "Registration success!". print_r($users);
+    $_SESSION['email'] = $email;
+    $_SESSION['password'] = $password;
     header("Location: index.php");
     die();
+
+
 
 }
 
