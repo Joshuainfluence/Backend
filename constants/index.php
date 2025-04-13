@@ -2,4 +2,11 @@
 
 include('constants.php');
 
-echo USER;
+$username = readline("Enter username: ");
+if ($username !== USER) {
+    echo "Wrong username";
+    die();
+}
+
+echo "Correct!";
+
