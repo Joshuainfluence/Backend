@@ -1,0 +1,84 @@
+@media screen and (max-width:600px) {
+    .front{
+        display: none;
+    }
+}
+body{
+    animation: mark 2s;
+}
+.bat{
+    width: 100%;
+    background-image: linear-gradient(aqua,blue);
+    border: 1px solid aqua;
+    border-radius: 20px;
+}
+.bat:hover{
+    background-image: linear-gradient(rgb(110, 224, 110),blue);
+    border: 1px solid green;
+    color: white;
+}
+
+@keyframes mark {
+   0%{
+    margin-top:200px;
+   } 
+   100%{
+    margin-bottom: 50px;
+   }
+}
+.first{
+    animation: first 3s linear infinite;
+}
+.second{
+    animation: second 3s linear infinite;
+}
+.third{
+    animation: third 3s linear infinite;
+}
+.fourth{
+    animation: fourth 3s linear infinite;
+}
+.fifth{
+    animation: fifth 3s linear infinite;
+}
+@keyframes first {
+    0%{
+        color:blue;
+    }
+    100%{
+        color: red;
+    }
+}
+@keyframes second {
+    0%{
+        color:red;
+    }
+    100%{
+        color: yellow;
+    }
+}
+@keyframes third {
+    0%{
+        color:green;
+    }
+    100%{
+        color: orange;
+    }
+}
+@keyframes fourth {
+    0%{
+        color: red;
+    }
+    100%{
+        color: pink;
+    }
+}
+@keyframes fifth {
+    0%{
+        color:white;
+    }
+    100%{
+        color: blue;
+    }
+}
+
