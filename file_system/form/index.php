@@ -94,11 +94,17 @@ $title = 'home';
                 </div>
             </div> -->
             <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
-                <form action="signup_val.php" method="POST">
+                <form action="auth.php" method="POST">
                     <div class="card bg-dark">
-                        <?php if (isset($_SESSION['reject'])) : ?>
-                            <div class="alert alert-danger mt-3"><?= $_SESSION['reject'] ?></div>
+                        <?php if (isset($_SESSION['error'])) : ?>
+                            <div class="alert alert-danger mt-3"><?= $_SESSION['error'] ?></div>
                         <?php endif ?>
+
+                        <?php if(isset($_SESSION['success'])) :?>
+                            <div class="alert alert-success mt-3">
+                                <?= $_SESSION['success'] ?>
+                            </div>
+                        <?php endif?>
                         <div class="card-header bg-dark text-light">
                             <h4>Create an account</h4>
                         </div>
@@ -179,5 +185,5 @@ $title = 'home';
 
 </html>
 <?php
-unset($_SESSION['reject'], $_SESSION['confirm'])
+unset($_SESSION['error'], $_SESSION['confirm'], $_SESSION['success'])
 ?>
