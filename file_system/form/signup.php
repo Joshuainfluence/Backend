@@ -13,7 +13,7 @@ $title = 'home';
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="bootstrap/bootstrap5.min.css">
     <link rel="stylesheet" href="font_awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="index.css">
     <script src="bootstrap/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 </head>
 
